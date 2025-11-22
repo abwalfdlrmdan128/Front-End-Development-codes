@@ -1,0 +1,41 @@
+*{
+box-sizing: border-box;
+margin: 0;
+}
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+background-color: #333;
+
+}
+
+.loading{
+display: flex;
+justify-content: center;
+margin: 50px auto;
+}
+
+.loading div{
+width: 20px;
+height: 20px;
+background-color: orchid;
+border-radius: 50%;
+margin: 0 5px;
+animation-name: UP_Down;
+animation-duration: 0.9s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+.loading .two{
+animation-delay: 0.3s;
+}
+.loading .three{
+animation-delay: 0.6s;
+}
+@keyframes UP_Down {
+to{
+opacity: 0.2;
+transform: translateY(-20px);
+}
+}
+
